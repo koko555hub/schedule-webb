@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <title>ตารางเรียนของฉัน</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>📚 ตารางเรียน</h1>
+
+<div class="box">
+  <h2>เพิ่มคาบเรียน</h2>
+
+  <label>วัน</label>
+  <select id="day">
+    <option value="0">อาทิตย์</option>
+    <option value="1">จันทร์</option>
+    <option value="2">อังคาร</option>
+    <option value="3">พุธ</option>
+    <option value="4">พฤหัส</option>
+    <option value="5">ศุกร์</option>
+    <option value="6">เสาร์</option>
+  </select>
+
+  <label>เวลาเรียน</label>
+  <input type="time" id="time">
+
+  <label>ชื่อวิชา</label>
+  <input type="text" id="subject">
+
+  <label>โน้ต</label>
+  <input type="text" id="note">
+
+  <label>รูปตารางเรียน</label>
+  <input type="file" id="imageInput" accept="image/*">
+
+  <button id="addBtn">➕ เพิ่มคาบเรียน</button>
+</div>
+
+<div class="box">
+  <h2>วันนี้ต้องเรียนอะไร</h2>
+  <div id="today"></div>
+</div>
+
+<div class="box">
+  <h2>ตารางเรียนทั้งหมด</h2>
+  <ul id="scheduleList"></ul>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
